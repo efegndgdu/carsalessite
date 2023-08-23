@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@600&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.logo2 {
+    justify-items: center;
+    width: 350px;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.bayrak {
+    width: 40px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'REM', sans-serif;
+    color: rgb(168, 166, 166);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-links {
+    display: flex;
+    gap: 10px;
+}
+
+
+.right-links a:hover {
+    color: rgb(219, 219, 219);
+
+
+}
+
+li {
+    text-decoration: none;
+
+}
+
+
+.right-links a {
+    margin-right: 10px;
+    padding-top: 8px;
+}
+
+
+/* Offcanvas container */
+.offcanvas {
+    display: flex;
+    background: rgb(84, 84, 84);
+    background: linear-gradient(180deg, rgba(84, 84, 84, 1) 0%, rgba(33, 33, 33, 1) 100%);
+    width: 200px;
+    height: 100%;
+    transition: transform 0.3s ease;
+    /* Yavaşça açılış ve kapanış için geçiş tanımı */
+}
+
+/* Eğer offcanvas aktif hale getirilirse */
+.offcanvas.show {
+    transform: translateX(0);
+    /* Transformu yavaşça değiştirerek açılışı sağlar */
+}
+
+/* Eğer offcanvas kapatılırsa */
+.offcanvas.hide {
+    transform: translateX(100%);
+    /* Transformu yavaşça değiştirerek kapanışı sağlar */
+}
+
+/* Offcanvas kapatma düğmesini sağ tarafa taşıyın */
+.btn-close {
+    position: absolute;
+    top: 20px;
+    /* İstenilen yüksekliği ayarlayın */
+    right: 20px;
+    /* İstenilen sağ kenar boşluğunu ayarlayın */
+}
+
+.nav-item a {
+    font-size: 26px;
+}
+
+.offcanvas-body .nav-item .btn {
+    width: 200px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 0, 2;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.offcanvas-body .nav-item .btn:hover {
+    color: black;
+    transition: 0.2s;
+    height: 50px;
+    width: 205px;
+    background-color: rgb(236, 236, 236);
+}
+
+.offcanvas-body .nav-link.active {
+    color: rgb(232, 232, 232);
+    /* İstenilen renk kodunu kullanın */
+}
+
+.container-wrapper.border-4.border-bottom.pt-3.pb-3 {
+    background: rgb(84, 84, 84);
+    background: linear-gradient(180deg, rgba(84, 84, 84, 1) 0%, rgba(33, 33, 33, 1) 100%);
+}
+
+.offcanvas-body .nav-item a {
+    color: rgb(168, 166, 166);
+}
+
+.offcanvas-body .nav-item a:hover {
+    color: rgb(232, 232, 232);
+}
+
+.offcanvas-body .nav-item .adres {
+    padding-left: 10px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+.offcanvas-body .nav-item .adres2 {
+    font-size: 22px;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding-left: 30px;
+}
+
+.offcanvas-body .nav-item .no {
+    padding-left: 5px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    color: black;
+    background-color: rgb(207, 207, 207);
+}
+
+.accordion-button[aria-expanded="true"] {
+    background-color: #b5b5b5;
+    /* Açık durum arka plan rengi */
+    color: black;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    /* Kırmızı odak rengi örneği */
+    /* Diğer stil ayarlamalarını burada yapabilirsiniz */
+}
+
+.card {
+    margin-top: 100px;
+    /* Üstten 20 piksel boşluk bırak */
+    margin-left: 70px;
+    /* Soldan 20 piksel boşluk bırak */
+    margin-bottom: 100px;
+    /* Alttan 20 piksel boşluk bırak */
+}
